@@ -42,7 +42,17 @@ public class FirstTest {
         //Assertion
         Assert.assertEquals(title, "Software Test Academy", "Title assertion is failed!");
     }
+    @Test
+    public void secondTest () {
+        //Get page title
+        String name = "Umesh kumar";
 
+        //Print page's title
+        System.out.println("Owner Name: " + name);
+
+        //Assertion
+        Assert.assertEquals(name, "Umesh kumar", "Title assertion is failed!");
+    }
     //-----------------------------------Test TearDown-----------------------------------
     @AfterMethod
     public void teardownTest (){
